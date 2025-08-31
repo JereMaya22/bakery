@@ -16,11 +16,11 @@ public class EmployeeService implements IEmployeeService {
         
     }
 
+
     @Override
     public void createEmployee(CreateEmployeeDto createEmployeeDto) {
-        Employee employee = new Employee();
-        employee.setName(createEmployeeDto.getName());
-        employeeRepository.save(employee);
+
+        employeeRepository.save(new Employee(null,createEmployeeDto.getName()));
     }
 
 

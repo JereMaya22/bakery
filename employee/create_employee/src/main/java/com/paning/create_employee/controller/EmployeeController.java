@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.paning.create_employee.modeldto.CreateEmployeeDto;
 import com.paning.create_employee.service.EmployeeService;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 
@@ -20,7 +21,7 @@ public class EmployeeController {
     
 
     @PostMapping("/create")    
-    public ResponseEntity<String> createEmployee(CreateEmployeeDto createEmployeeDto){
+    public ResponseEntity<String> createEmployee(@RequestBody CreateEmployeeDto createEmployeeDto){
         employeeService.createEmployee(createEmployeeDto);
         return ResponseEntity.ok("Employee created successfully");
     }
