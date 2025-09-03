@@ -3,16 +3,16 @@
   <component name="CompilerConfiguration">
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
-      <profile name="Annotation profile for create_employee" enabled="true">
+      <profile name="Annotation profile for getallemployee" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
         </processorPath>
-        <module name="create_employee" />
         <module name="getallemployee" />
         <module name="delet_user" />
+        <module name="create_employee" />
         <module name="get_by_id_user" />
         <module name="createuser" />
         <module name="getusers" />
