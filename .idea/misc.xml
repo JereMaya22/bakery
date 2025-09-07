@@ -10,6 +10,7 @@
         <option value="$PROJECT_DIR$/user/get_by_id_user/pom.xml" />
         <option value="$PROJECT_DIR$/employee/getallemployee/pom.xml" />
         <option value="$PROJECT_DIR$/employee/create_employee/pom.xml" />
+        <option value="$PROJECT_DIR$/employee/editemployee/pom.xml" />
       </list>
     </option>
   </component>

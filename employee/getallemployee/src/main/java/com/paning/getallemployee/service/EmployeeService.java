@@ -1,5 +1,6 @@
 package com.paning.getallemployee.service;
 
+import com.paning.getallemployee.exception.EmployeeNotFoundException;
 import com.paning.getallemployee.model.Employee;
 import com.paning.getallemployee.modeldto.getEmployeeDTO;
 import com.paning.getallemployee.repository.IEmployeeRepository;
@@ -22,6 +23,13 @@ public class EmployeeService implements IEmployeeService{
 
     @Override
     public List<getEmployeeDTO> getAllEmployee() {
+
+        List<Employee> employees = employeeRepository.findAll();
+
+        if(employees.isEmpty()){
+            throw new EmployeeNotFoundException("employees Empty");
+        }
+
         return employeeRepository.findAll().stream().map(this::convertToDto).toList();
     }
 }
