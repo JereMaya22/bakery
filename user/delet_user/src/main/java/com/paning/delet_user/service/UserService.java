@@ -16,7 +16,6 @@ public class UserService implements IUserService{
     @Override
     public Void deletUser(Long id) {
         userRespository.deleteById(id);
-        return null;
     }
 
 }
